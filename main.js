@@ -8,7 +8,7 @@ console.log(hamburgerMenu);
 
 //uso la funzione addEventListener per scatenare un evento a seguito di un click su HamburgerIcon
 hamburgerIcon.addEventListener('click', function(){
-    console.log('prova');
+    // console.log('prova');
     hamburgerMenu.classList.add('active');
 });
 
@@ -16,3 +16,8 @@ hamburgerIcon.addEventListener('click', function(){
 const closeIcon = document.querySelector('.hamburger-menu .close');
 console.log(closeIcon);
 
+//rimuovo la classe aggiunta in precedenza cliccando l'icona X (closeIcon)
+closeIcon.addEventListener('click', function(){
+    // console.log('seconda prova');
+    hamburgerMenu.classList.remove('active');
+})
