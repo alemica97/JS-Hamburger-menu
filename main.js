@@ -6,7 +6,8 @@ console.log(hamburgerIcon);
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 console.log(hamburgerMenu);
 
+//uso la funzione addEventListener per scatenare un evento a seguito di un click su HamburgerIcon
 hamburgerIcon.addEventListener('click', function(){
     console.log('prova');
-
+    hamburgerMenu.classList.add('active');
 });
