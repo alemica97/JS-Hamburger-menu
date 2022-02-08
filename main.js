@@ -1,4 +1,4 @@
-//salvo in una costante l'elemento HTML che dovrò cliccare in seguito
+//salvo in una costante l'elemento HTML che dovrò cliccare in seguito per far apparire il menu
 const hamburgerIcon = document.querySelector('.header-right > a');
 console.log(hamburgerIcon);
 
@@ -11,3 +11,8 @@ hamburgerIcon.addEventListener('click', function(){
     console.log('prova');
     hamburgerMenu.classList.add('active');
 });
+
+//salvo l'elemento HTML che rappresenta la x che chiude il menù
+const closeIcon = document.querySelector('.hamburger-menu .close');
+console.log(closeIcon);
+
